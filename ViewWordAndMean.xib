@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4514" systemVersion="13A598" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewWordAndMean">
+            <connections>
+                <outlet property="MeanLabel" destination="uGz-Rk-jnd" id="PRt-dv-1K0"/>
+                <outlet property="WordLabel" destination="aHV-WB-ywd" id="A5i-Yv-7n1"/>
+                <outlet property="view" destination="1" id="3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aHV-WB-ywd">
+                    <rect key="frame" x="20" y="79" width="280" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="1" green="0.9225609293" blue="0.49191246119999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" alwaysBounceVertical="YES" keyboardDismissMode="onDrag" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uGz-Rk-jnd">
+                    <rect key="frame" x="20" y="124" width="280" height="424"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.81586427140265916" green="0.8437280001452252" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <attributedString key="attributedText">
+                        <fragment content="sdad">
+                            <attributes>
+                                <color key="NSColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                <font key="NSFont" size="17" name="Helvetica"/>
+                                <font key="NSOriginalFont" size="17" name="Helvetica"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="4" tighteningFactorForTruncation="0.0099999997764825821"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="uGz-Rk-jnd" firstAttribute="top" secondItem="aHV-WB-ywd" secondAttribute="bottom" constant="15" id="JGI-Ek-tnz"/>
+                <constraint firstItem="aHV-WB-ywd" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="20" id="Vne-xe-hKn"/>
+                <constraint firstAttribute="trailing" secondItem="uGz-Rk-jnd" secondAttribute="trailing" constant="20" id="XvH-Vd-mbf"/>
+                <constraint firstAttribute="bottom" secondItem="uGz-Rk-jnd" secondAttribute="bottom" constant="20" id="Zjc-MW-Kpl"/>
+                <constraint firstItem="aHV-WB-ywd" firstAttribute="top" secondItem="1" secondAttribute="top" constant="79" id="bUs-Fh-2qI"/>
+                <constraint firstItem="uGz-Rk-jnd" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="20" id="ffi-YH-HwQ"/>
+                <constraint firstAttribute="trailing" secondItem="aHV-WB-ywd" secondAttribute="trailing" constant="20" id="n3h-7O-u9I"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+</document>

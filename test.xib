@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4514" systemVersion="13A598" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="test">
+            <connections>
+                <outlet property="Tits" destination="7Rv-sa-HS8" id="8L1-4e-7lq"/>
+                <outlet property="pageoutlet" destination="rGF-WB-iLd" id="Af5-W2-506"/>
+                <outlet property="scrollView" destination="0q6-Dq-iYJ" id="yYD-5g-TFW"/>
+                <outlet property="textMean1" destination="7kL-Ug-WPm" id="smY-d6-teI"/>
+                <outlet property="textMean2" destination="2HB-U9-RZM" id="TBk-Hn-xiG"/>
+                <outlet property="textMean3" destination="wpO-Hk-S0b" id="O4g-8H-UDV"/>
+                <outlet property="textMean4" destination="vCI-4x-D4k" id="ziI-1P-8C9"/>
+                <outlet property="view" destination="1" id="3"/>
+                <outlet property="wordLabel" destination="a7X-Nc-jaY" id="eMV-y5-qwY"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" alwaysBounceHorizontal="YES" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0q6-Dq-iYJ">
+                    <rect key="frame" x="0.0" y="106" width="320" height="356"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="KP7-CD-0fs"/>
+                    </connections>
+                </scrollView>
+                <pageControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" translatesAutoresizingMaskIntoConstraints="NO" id="rGF-WB-iLd">
+                    <rect key="frame" x="141" y="470" width="39" height="37"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="pageIndicatorTintColor" red="0.26067156952628812" green="0.50261724551122833" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="currentPageIndicatorTintColor" red="0.72934358016304346" green="0.72928376340397172" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                </pageControl>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="switch and choose right answer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Rv-sa-HS8">
+                    <rect key="frame" x="20" y="500" width="280" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a7X-Nc-jaY">
+                    <rect key="frame" x="20" y="77" width="280" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GwX-qa-mHt">
+                    <rect key="frame" x="-17" y="527" width="355" height="44"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" image="right button">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="rightbutton:" destination="-1" eventType="touchUpInside" id="Beb-lU-3OS"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="7Rv-sa-HS8" firstAttribute="top" secondItem="rGF-WB-iLd" secondAttribute="bottom" constant="-7" id="907-FO-McM"/>
+                <constraint firstItem="GwX-qa-mHt" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="-17" id="9CQ-Ay-1no"/>
+                <constraint firstItem="0q6-Dq-iYJ" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="BDd-1R-wLg"/>
+                <constraint firstAttribute="trailing" secondItem="GwX-qa-mHt" secondAttribute="trailing" constant="-18" id="PHx-Hj-Hox"/>
+                <constraint firstItem="0q6-Dq-iYJ" firstAttribute="top" secondItem="1" secondAttribute="top" constant="106" id="QYL-d3-7Q0"/>
+                <constraint firstItem="a7X-Nc-jaY" firstAttribute="top" secondItem="1" secondAttribute="top" constant="77" id="cN8-Od-O9L"/>
+                <constraint firstAttribute="bottom" secondItem="rGF-WB-iLd" secondAttribute="bottom" constant="61" id="dwS-ox-kWj"/>
+                <constraint firstAttribute="bottom" secondItem="GwX-qa-mHt" secondAttribute="bottom" constant="-3" id="jL2-kE-wpy"/>
+                <constraint firstAttribute="bottom" secondItem="0q6-Dq-iYJ" secondAttribute="bottom" constant="106" id="tUJ-YM-Nzv"/>
+                <constraint firstAttribute="centerX" secondItem="rGF-WB-iLd" secondAttribute="centerX" constant="-0.5" id="utL-Vu-jZm"/>
+                <constraint firstAttribute="trailing" secondItem="0q6-Dq-iYJ" secondAttribute="trailing" id="xQ4-wA-Kxh"/>
+                <constraint firstAttribute="centerX" secondItem="7Rv-sa-HS8" secondAttribute="centerX" id="zUK-rU-frw"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="1" selectable="NO" id="7kL-Ug-WPm">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <color key="backgroundColor" red="1" green="0.69192444214469107" blue="0.5359226330231841" alpha="1" colorSpace="calibratedRGB"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+        </textView>
+        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="2" selectable="NO" id="2HB-U9-RZM">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <color key="backgroundColor" red="1" green="0.8705297159020785" blue="0.59737133138903342" alpha="1" colorSpace="calibratedRGB"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+        </textView>
+        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="3" selectable="NO" id="wpO-Hk-S0b">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <color key="backgroundColor" red="0.63356001846403953" green="0.71175055281800859" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+        </textView>
+        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="4" selectable="NO" id="vCI-4x-D4k">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <color key="backgroundColor" red="0.68568019034362704" green="1" blue="0.73905893983754445" alpha="1" colorSpace="calibratedRGB"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+        </textView>
+    </objects>
+    <resources>
+        <image name="right button" width="320" height="40"/>
+    </resources>
+</document>

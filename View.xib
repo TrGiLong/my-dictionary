@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4514" systemVersion="13A598" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="136" id="pNF-aQ-cB7" customClass="CellTest">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="136"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="pNF-aQ-cB7" id="dYn-iR-8uL">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="135"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" text="Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor " selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z35-ak-OhK">
+                        <rect key="frame" x="0.0" y="0.0" width="260" height="125"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Z35-ak-OhK" firstAttribute="leading" secondItem="dYn-iR-8uL" secondAttribute="leading" id="4Gb-GN-H8V"/>
+                    <constraint firstAttribute="bottom" secondItem="Z35-ak-OhK" secondAttribute="bottom" constant="10" id="9Qp-5F-3R0"/>
+                    <constraint firstItem="Z35-ak-OhK" firstAttribute="top" secondItem="dYn-iR-8uL" secondAttribute="top" id="ED3-3h-VHi"/>
+                    <constraint firstAttribute="trailing" secondItem="Z35-ak-OhK" secondAttribute="trailing" constant="60" id="pNN-Cw-T1D"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="Meaning" destination="Z35-ak-OhK" id="Cei-lD-EEX"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>
